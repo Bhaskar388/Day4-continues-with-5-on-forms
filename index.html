@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="Icon" href="/Day4,5forms/flag.png" />
+  </head>
+  <body>
+    <form action="">
+      <span
+        ><label for="">name</label>
+        <input type="text" name="" id="" />
+        <br />
+        <label for="">Email </label>
+        <input type="email" />
+        <br />
+        <label for="">password</label>
+        <input type="password" />
+        <br />
+        <input type="submit" />
+      </span>
+    </form>
+    <hr />
+    <h5>day 5 continues on forms</h5>
+    <hr />
+    <h1>Course Regestration form:</h1>
+    <form>
+      <label for="name">First Name</label>
+      <input type="text" placeholder="Enter your first Name" /> <br />
+      <label for="lastname">Last Name</label>
+      <input type="text" placeholder="ENter your Last name" /> <br />
+      <label for="phonenumber">Phone Number</label>
+      <input type="tel" placeholder="+91-" /> <br />
+      <label for="itisemail">Email</label>
+      <input type="email" placeholder="Enter yout gmail" /> <br />
+      <label for="forpassword">Password</label>
+      <input type="password" placeholder="Enter Password" /> <br />
+      <label for="confirmpassword">Confirm Password</label>
+      <input type="password" placeholder="check you password" /> <br />
+      <label for="dob">Date of birth</label>
+      <input type="date" /> <br />
+
+      <label for="gender">Gender</label>
+      <input name="gender1" type="radio" value="Male" /><label>Male</label>
+      <input name="gender2" type="radio" value="Female" /><label>Female</label>
+      <input name="gender3" type="radio" value="Others" /><label>Others</label>
+      <br />
+
+      <label for="country"> Select Country</label>
+      <select>
+        <option value="name">Select Country</option>
+        <option value="INDIA">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <!-- value should give once user submut it it will save as per value otherwsie it is just for slect -->
+      </select>
+      <br />
+
+      <label for="picture">Select Picture</label>
+      <input type="file" multiple />
+      <!-- here multiple beacuse to upload 1 or more files -->
+      <br />
+      <button><input type="reset" /></button>
+    </form>
+    <hr />
+    <form action="">
+      <table>
+        <tr>
+          <td><label for="name">First Name</label></td>
+          <td>
+            <input type="text" placeholder="Enter your first Name" required />
+          </td>
+        </tr>
+        <!-- required att is used for compulsory to fill -->
+        <tr>
+          <td><label for="lastname">Last Name</label></td>
+          <td>
+            <input type="text" placeholder="ENter your Last name" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phonenumber">Phone Number</label></td>
+          <td><input type="tel" placeholder="+91-" required /></td>
+        </tr>
+        <tr>
+          <td><label for="itisemail">Email</label></td>
+          <td>
+            <input type="email" placeholder="Enter yout gmail" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="forpassword">Password</label></td>
+          <td>
+            <input type="password" placeholder="Enter Password" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="confirmpassword">Confirm Password</label></td>
+          <td>
+            <input type="password" placeholder="check you password" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of birth</label></td>
+          <td><input type="date" required /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>
+            <input name="gender1" type="radio" value="Male" /><label
+              >Male</label
+            >
+            <input name="gender2" type="radio" value="Female" /><label
+              >Female</label
+            >
+            <input name="gender3" type="radio" value="Others" /><label
+              >Others</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><label for="country"> Select Country</label></td>
+          <td>
+            <select required>
+              <option value="name">Select Country</option>
+              <option value="INDIA">India</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <!-- value should give once user submut it it will save as per value otherwsie it is just for slect -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="picture">Select Picture</label></td>
+          <td><input type="file" multiple /></td>
+        </tr>
+        <tr>
+          <td>
+            <button><input type="reset" /></button>
+          </td>
+        </tr>
+        <tr>
+          <td><button>Submit</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
